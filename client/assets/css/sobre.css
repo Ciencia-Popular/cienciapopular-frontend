@@ -1,0 +1,37 @@
+.sobre__content{
+    box-sizing: border-box;
+    padding: 4.5rem 10% 4.5rem 10%;
+    width: 100%;
+}
+
+.sobre__titulo-principal {
+    color: #0A6C85;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.sobre__texto {
+    color: #323232;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+
+.sobre__fotos-pai {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre__fotos {
+    width: 18%;
+}
+
+.sobre__foto {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.sobre__pessoa {
+    text-align: center;
+}

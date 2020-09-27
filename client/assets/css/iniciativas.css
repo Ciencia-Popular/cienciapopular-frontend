@@ -1,0 +1,73 @@
+.filtros__pai{
+    display: flex;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.filtros{
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    margin-right: 1rem;
+    height: 3rem;
+    background-color: #0A6C85;
+    color: #ffffff;
+    border: none;
+    border-radius: .5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.iniciativas__pai{
+    display: flex;
+    flex-direction: column;
+}
+
+.iniciativa{
+    display: flex;
+    width: 100%;
+}
+
+.iniciativa:nth-child(2n){
+    background-color: rgba(87,204,234, .1);
+}
+
+
+.iniciativas__numeracao{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iniciativas__numero{
+    color: #0A6C85;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.iniciativas__texto{
+    width: 90%;
+    padding: 3rem 2rem 3rem 2rem;
+}
+
+.iniciativas__titulo{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #0A6C85;
+    margin-bottom: 1rem;
+    line-height: 0;
+}
+
+.iniciativas__paragrafos{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #0A6C85;
+    margin-bottom: 1rem;
+}
+.iniciativas__paragrafos:last-child{
+    margin-bottom: 0;
+}
+
+.iniciativas__negrito{
+    font-weight: 700;
+}
