@@ -34,9 +34,24 @@
     list-style: none;
 }
 
+.nav__pai {
+    display: flex;
+}
+
+.nav__item{
+    margin-right: 6rem;
+}
+.nav__item:last-child{
+    margin-right: 0;
+}
+
 .nav__item a{
     text-decoration: none;
     color: #FFFFFF;
     font-size: 1.5rem;
     font-weight: 700;
+}
+
+.nav__cadastrar a{
+    color: khaki;
 }

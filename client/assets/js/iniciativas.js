@@ -29,3 +29,7 @@ let listaIniciativas = (iniciativas) => {
 
 
 }
+
+let limparIniciativas = () => {
+    iniciativasPai.innerHTML = '';
+}

@@ -1,6 +1,6 @@
 .init-view__content {
     box-sizing: border-box;
-    padding: 4.5rem 10% 0 10%;
+    padding: 4.5rem 10% 2rem 10%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;

@@ -1,6 +1,6 @@
 .sobre__content{
     box-sizing: border-box;
-    padding: 4.5rem 10% 4.5rem 10%;
+    padding: 2rem 10% 4.5rem 10%;
     width: 100%;
 }
 
@@ -20,18 +20,27 @@
 .sobre__fotos-pai {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    
 }
 
 .sobre__fotos {
-    width: 18%;
+    width: 13%;
+    margin-bottom: 2rem;
+    margin-right: 3.6%;
 }
 
 .sobre__foto {
     width: 100%;
     border-radius: 100%;
+    filter: grayscale(100%);
+    transition: all 1;
+}
+.sobre__foto:hover {
+    filter: grayscale(0);
 }
 
 .sobre__pessoa {
     text-align: center;
+    font-size: 1.4rem;
 }

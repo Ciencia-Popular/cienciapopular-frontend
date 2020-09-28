@@ -7,7 +7,7 @@ var dialogBody = document.querySelector('.dialogNewsletter-body');
 var dialogOverlay = document.querySelector('.dialogNewsletter-overlay');
 
 
-// Quando abrir a dialog...
+// Listener para abrir dialog pelos cards
 conteudoPrincipal.addEventListener('click', function(evento) {
   var alvoDoEvento = event.target;
   
@@ -17,16 +17,16 @@ conteudoPrincipal.addEventListener('click', function(evento) {
   }
 });
 
+// Funcao que fecha a dialog
 function fechandoDialog() {
   document.activeElement.blur();
   dialog.classList.remove('dialogNewsletter--aberto'); 
   conteudoForaDialog.inert = false;
 }
 
-// Listeners
+// Listeners para fechar
 document.querySelector('.dialogNewsletter-fechar').addEventListener('click', fechandoDialog);
 dialogOverlay.addEventListener('click', fechandoDialog);
-
 document.addEventListener('keyup', function(evento) {
   if (evento.keyCode == 27) {
       fechandoDialog()

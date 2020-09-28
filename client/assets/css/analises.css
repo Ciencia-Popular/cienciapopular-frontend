@@ -1,0 +1,11 @@
+.analises{
+    padding: 2rem 10% 2rem 10%;
+    background-color: #dfdfdf;
+}
+
+.analises__filha {
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem 5rem;
+    background-color: #FFFFFF;
+}

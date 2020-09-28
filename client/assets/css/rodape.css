@@ -43,8 +43,15 @@
 
 .rodape__info{
     height: 100%;
+    margin-right: 2rem;
+    border-right: .1rem solid #3BACC9;
+    padding-right: 4rem;
 }
-
+.rodape__info:last-child{
+    margin-right: 0;
+    border-right: none;
+    padding-right: 0;
+}
 .rodape__info-nav ul {
     list-style: none;
 }

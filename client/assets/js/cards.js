@@ -1,5 +1,6 @@
 let numerosContent = document.querySelector('.conteudo-principal');
 
+//numero de projetos existentes
 let inserirNumerosNoContent = (resposta) => {
 
     let regioes = {
@@ -41,31 +42,17 @@ let inserirCards = (sudeste, sul, centroOeste, norte, nordeste) => {
     let regioesNome = [];
 
     regioesCard.push(sudeste,sul,centroOeste,norte,nordeste);
-    regioesNome.push('Sudeste','Sul','C. Oeste','Norte','Nordeste');    
+    regioesNome.push('Sudeste','Sul','C-Oeste','Norte','Nordeste');    
 
-    cards =`
-                    <div class="conteudo-principal__cards" id="dialogAbrir">
-                            <p class="cards__regiao">${regioesNome[0]}</p>
-                            <p class="cards__content"><strong class="cards__number">${regioesCard[0]}</strong><br>ações</p>
-                        </div>
-                        <div class="conteudo-principal__cards">
-                          <p class="cards__regiao">${regioesNome[1]}</p>
-                          <p class="cards__content"><strong class="cards__number">${regioesCard[1]}</strong><br>ações</p>
-                      </div>
-                      <div class="conteudo-principal__cards">
-                        <p class="cards__regiao">${regioesNome[2]}</p>
-                        <p class="cards__content"><strong class="cards__number">${regioesCard[2]}</strong><br>ações</p>
-                      </div>
-                      <div class="conteudo-principal__cards">
-                        <p class="cards__regiao">${regioesNome[3]}</p>
-                        <p class="cards__content"><strong class="cards__number">${regioesCard[3]}</strong><br>ações</p>
-                      </div>
-                      <div class="conteudo-principal__cards">
-                        <p class="cards__regiao">${regioesNome[4]}</p>
-                        <p class="cards__content"><strong class="cards__number">${regioesCard[4]}</strong><br>ações</p>
-                      </div>     
-    `;
-
+    for(let i = 0; i < regioesNome.length; i++){
+      cards +=`
+        <div class="conteudo-principal__cards ${regioesNome[i]}" id="dialogAbrir">
+                <p class="cards__regiao ${regioesNome[i]}">${regioesNome[i]}</p>
+                <p class="cards__content ${regioesNome[i]}"><strong class="cards__number ${regioesNome[i]}">${regioesCard[i]}</strong><br>ações</p>
+        </div>
+      `;
+    }
+    
     return cards;
 }
 
