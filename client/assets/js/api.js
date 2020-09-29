@@ -17,28 +17,46 @@ listarIniciativas().then(dadosBrutos => {
 
     listaIniciativas(dadosBrutos);
 
-    filtroRegiao.addEventListener('change', function(){
-        let dadosFiltradosRegiao = [];
-        dadosFiltradosRegiao = filtrarDadosRegiao(dadosBrutos, this.value);
+    filtroRegiao.addEventListener('change', function(){    
+        inicioDaInsercao=10;    
+        dadosFiltrados = filtrarDadosRegiao(dadosBrutos, this.value);
         limparIniciativas();
         filtroEstado.selectedIndex = 0;
         filtroTipo.selectedIndex = 0;
-        listaIniciativas(dadosFiltradosRegiao);
+        listaIniciativas(dadosFiltrados);
     });
+
     filtroEstado.addEventListener('change', function(){
-        let dadosFiltradosEstado = [];
-        dadosFiltradosEstado = filtrarDadosEstado(dadosBrutos, this.value);
+        inicioDaInsercao=10;
+        dadosFiltrados = filtrarDadosEstado(dadosBrutos, this.value);
         limparIniciativas();
         filtroRegiao.selectedIndex = 0;
         filtroTipo.selectedIndex = 0;
-        listaIniciativas(dadosFiltradosEstado);        
+        listaIniciativas(dadosFiltrados);        
     });
+
     filtroTipo.addEventListener('change', function(){
-        let dadosFiltradosTipo = [];
-        dadosFiltradosTipo = filtrarDadosTipo(dadosBrutos, this.value);
+        inicioDaInsercao=10;
+        dadosFiltrados = filtrarDadosTipo(dadosBrutos, this.value);
         limparIniciativas();
         filtroRegiao.selectedIndex = 0;
         filtroEstado.selectedIndex = 0;
-        listaIniciativas(dadosFiltradosTipo);        
+        listaIniciativas(dadosFiltrados);        
+    });
+
+    botaoDialog.addEventListener("click", function(){  
+        if(filtroRegiao.value != "Regiao"){
+            inserirIniciativas(dadosFiltrados, inicioDaInsercao);
+        }
+        else if(filtroEstado.value != "Estado"){
+            inserirIniciativas(dadosFiltrados, inicioDaInsercao);
+        }
+        else if(filtroTipo.value != "Tipo"){
+            inserirIniciativas(dadosFiltrados, inicioDaInsercao);
+        }
+        else{
+            inserirIniciativas(dadosBrutos, inicioDaInsercao);
+        }
+        inicioDaInsercao+=1;       
     });
 });

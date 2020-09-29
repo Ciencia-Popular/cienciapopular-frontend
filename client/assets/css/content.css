@@ -24,6 +24,7 @@
     color: #646464;
     font-weight: 400;
     text-align: right;
+    margin-bottom: 2rem;
 }
 
 .conteudo-principal__p:last-child {
@@ -91,3 +92,35 @@
     color: #FFFFFF;
     text-decoration: underline;
 }
+
+@media only screen and (max-width: 850px) {
+
+
+    .mapa-do-brasil {
+        display: none;
+    }
+    .chamada__mapa{
+        display: none;
+    }
+
+    .conteudo-principal {
+        width: 100%;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    .conteudo-principal__pai-cards{
+        flex-wrap: wrap;
+    }
+
+    .conteudo-principal__cards{
+        width: 48%;
+        margin-bottom: 2rem;
+    }
+    .conteudo-principal__cards:last-child{
+        margin-bottom: 0;
+    }
+}
+

@@ -55,3 +55,27 @@
 .nav__cadastrar a{
     color: khaki;
 }
+
+@media only screen and (max-width: 850px) {
+    .init-view{
+        min-height: auto;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    .init-view__cabecalho{
+        flex-direction: column;
+    }
+    .nav__pai {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav__item{
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+    .nav__item:last-child{
+        margin-bottom: 0;
+    }    
+  }

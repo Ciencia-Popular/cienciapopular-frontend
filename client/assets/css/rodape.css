@@ -71,7 +71,29 @@
 }
 
 
+@media only screen and (max-width: 1060px) {
+    .rodape__content{
+        flex-direction: column;
+    }
+    .rodape__pai-info {
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        flex-direction: column;
+    }
+    .rodape__info{
+        margin-right: 0;
+        border-right: none;
+        margin-bottom: 3rem;
+        padding-right: 0;
+    }
+    .rodape__info:last-child{
+        margin-bottom: 0;
+    }
 
+}
+
+@media only screen and (max-width: 450px) {}
 
 
 

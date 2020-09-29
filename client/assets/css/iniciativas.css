@@ -2,6 +2,7 @@
     display: flex;
     width: 100%;
     margin-bottom: 2rem;
+    box-sizing: border-box;
 }
 
 .filtros{
@@ -20,6 +21,7 @@
 .iniciativas__pai{
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 .iniciativa{
@@ -69,4 +71,32 @@
 
 .iniciativas__negrito{
     font-weight: 700;
+}
+
+.dialog__botao{
+    padding: 2rem;
+    width: 100%;
+    background-color: #0A6C85;
+    color: #ffffff;
+    font-size: 2rem;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+.dialog__botao:hover{
+    background-color: #3BACC9;
+}
+
+@media only screen and (max-width: 740px) {
+    .filtros__pai{
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+
+    .filtros{
+        margin-right: 0;
+        margin-bottom: .5rem;
+    }
 }

@@ -7,6 +7,7 @@ var dialogBody = document.querySelector('.dialogNewsletter-body');
 var dialogOverlay = document.querySelector('.dialogNewsletter-overlay');
 
 
+
 // Listener para abrir dialog pelos cards
 conteudoPrincipal.addEventListener('click', function(evento) {
   var alvoDoEvento = event.target;

@@ -44,3 +44,18 @@
     text-align: center;
     font-size: 1.4rem;
 }
+
+@media only screen and (max-width: 850px) {
+    .sobre__fotos {
+        width: 30%;
+        margin-right: 3.3%;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    .sobre__fotos {
+        width: 45%;
+        margin-right: 5%;
+    }
+}

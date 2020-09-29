@@ -26,7 +26,7 @@ let inserirNumerosNoContent = (resposta) => {
     let instituicoes = contarInstituicoes(resposta);
     
     numerosContent.innerHTML = `
-    <h2 class="conteudo-principal__p"><strong class="conteudo-principal__destaque">Universidades contra COVID-19</strong><br>Clique no mapa ou nos cards para ver as iniciativas!</h2>
+    <h2 class="conteudo-principal__p"><strong class="conteudo-principal__destaque">Universidades contra COVID-19</strong><br>Clique <span class="chamada__mapa">no mapa ou </span>nos cards para ver as iniciativas!</h2>
     <h2 class="conteudo-principal__p"><strong class="conteudo-principal__destaque">${resposta.length} ações</strong><br>foram mapeadas até o momento</h2>
     <h2 class="conteudo-principal__p">Dentre <strong class="conteudo-principal__destaque">${instituicoes} universidades</strong><br> e <strong class="conteudo-principal__destaque">institutos</strong> do Brasil</h2>
 
