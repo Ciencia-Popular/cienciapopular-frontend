@@ -1,0 +1,126 @@
+.init-view__content {
+    box-sizing: border-box;
+    padding: 4.5rem 10% 2rem 10%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mapa-do-brasil {
+    width: 44%;
+    box-sizing: border-box;
+    max-height: 40.5rem;
+}
+
+.conteudo-principal {
+    width: 56%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.conteudo-principal__p {
+    font-size: 2.5rem;
+    color: #646464;
+    font-weight: 400;
+    text-align: right;
+    margin-bottom: 2rem;
+}
+
+.conteudo-principal__p:last-child {
+    margin-bottom: 0;
+}
+
+.conteudo-principal__destaque{
+    color: #0A6C85;
+}
+
+.conteudo-principal__pai-cards{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.conteudo-principal__cards{
+    width: 19%;
+    margin: 0;
+    border: .1rem solid #BBBBBB;
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,.15);
+    box-sizing: border-box;
+}
+
+.conteudo-principal__cards:hover{
+    border: .1rem solid #0A6C85;
+}
+
+.cards__regiao{
+    font-size: 1.4rem;
+    text-align: center;
+    color: #39B6CC;
+    font-weight: 400;
+}
+
+.cards__content{
+    color: #0A6C85;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.cards__number{
+    font-weight: 700;
+}
+
+.init-view__iniciativas-download{
+    margin-top: 4rem;
+    width: 100%;
+    padding: 1.5rem;
+    background-color: #39B6CC;
+    border-radius: 1.5rem;
+}
+
+.iniciativas-download__texto {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.iniciativas-download__texto a {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 850px) {
+
+
+    .mapa-do-brasil {
+        display: none;
+    }
+    .chamada__mapa{
+        display: none;
+    }
+
+    .conteudo-principal {
+        width: 100%;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    .conteudo-principal__pai-cards{
+        flex-wrap: wrap;
+    }
+
+    .conteudo-principal__cards{
+        width: 48%;
+        margin-bottom: 2rem;
+    }
+    .conteudo-principal__cards:last-child{
+        margin-bottom: 0;
+    }
+}
+

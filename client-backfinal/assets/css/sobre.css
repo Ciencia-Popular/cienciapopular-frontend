@@ -1,0 +1,61 @@
+.sobre__content{
+    box-sizing: border-box;
+    padding: 2rem 10% 4.5rem 10%;
+    width: 100%;
+}
+
+.sobre__titulo-principal {
+    color: #0A6C85;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.sobre__texto {
+    color: #323232;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+
+.sobre__fotos-pai {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.sobre__fotos {
+    width: 13%;
+    margin-bottom: 2rem;
+    margin-right: 3.6%;
+}
+
+.sobre__foto {
+    width: 100%;
+    border-radius: 100%;
+    filter: grayscale(100%);
+    transition: all 1;
+}
+.sobre__foto:hover {
+    filter: grayscale(0);
+}
+
+.sobre__pessoa {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 850px) {
+    .sobre__fotos {
+        width: 30%;
+        margin-right: 3.3%;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    .sobre__fotos {
+        width: 45%;
+        margin-right: 5%;
+    }
+}
