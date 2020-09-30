@@ -34,25 +34,30 @@ let limparIniciativas = () => {
 
 let inicioDaInsercao = 10;
 let inserirIniciativas = (iniciativas, inicio) => {
-    iniciativasPai.innerHTML  += `
-        <div class="iniciativa">
-                          <div class="iniciativas__numeracao">
-                              <div class="iniciativas__numero">${inicio+1}</div>
+    let inseriu = true;
+    while(iniciativas.length > inicio && inseriu){
+        iniciativasPai.innerHTML  += `
+            <div class="iniciativa">
+                              <div class="iniciativas__numeracao">
+                                  <div class="iniciativas__numero">${inicio+1}</div>
+                              </div>
+        
+                              <div class="iniciativas__texto">
+        
+                                  <h2 class="iniciativas__titulo">${iniciativas[inicio].nome_projeto}</h2>
+        
+                                  <p class="iniciativas__paragrafos"><strong class="iniciativas__negrito">${iniciativas[inicio].universidade_projeto} (${iniciativas[inicio].categoria_universidade})</strong></p>
+        
+                                  <p class="iniciativas__paragrafos">${iniciativas[inicio].descricao_projeto}</p>
+        
+                                  <p class="iniciativas__paragrafos"><strong class="iniciativas__negrito">Categoria:</strong> ${iniciativas[inicio].categoria_projeto} - <strong class="iniciativas__negrito">Publico-alvo:</strong> ${iniciativas[inicio].alvo_projeto} - <strong class="iniciativas__negrito">Contribuição:</strong> ${iniciativas[inicio].contribuicao_projeto} - <strong class="iniciativas__negrito">Abrangência:</strong> ${iniciativas[inicio].abrangencia_projeto}</p>
+        
+                                  <p class="iniciativas__paragrafos"><strong class="iniciativas__negrito">Município e UF:</strong> ${iniciativas[inicio].municipio_campus}, ${iniciativas[inicio].uf_campus}</p>
+                                  <p class="iniciativas__paragrafos"><strong class="iniciativas__negrito">Contato(s):</strong> ${iniciativas[inicio].contato_projeto}</p>
+                              </div>
                           </div>
-    
-                          <div class="iniciativas__texto">
-    
-                              <h2 class="iniciativas__titulo">${iniciativas[inicio].nome_projeto}</h2>
-    
-                              <p class="iniciativas__paragrafos"><strong class="iniciativas__negrito">${iniciativas[inicio].universidade_projeto} (${iniciativas[inicio].categoria_universidade})</strong></p>
-    
-                              <p class="iniciativas__paragrafos">${iniciativas[inicio].descricao_projeto}</p>
-    
-                              <p class="iniciativas__paragrafos"><strong class="iniciativas__negrito">Categoria:</strong> ${iniciativas[inicio].categoria_projeto} - <strong class="iniciativas__negrito">Publico-alvo:</strong> ${iniciativas[inicio].alvo_projeto} - <strong class="iniciativas__negrito">Contribuição:</strong> ${iniciativas[inicio].contribuicao_projeto} - <strong class="iniciativas__negrito">Abrangência:</strong> ${iniciativas[inicio].abrangencia_projeto}</p>
-    
-                              <p class="iniciativas__paragrafos"><strong class="iniciativas__negrito">Município e UF:</strong> ${iniciativas[inicio].municipio_campus}, ${iniciativas[inicio].uf_campus}</p>
-                              <p class="iniciativas__paragrafos"><strong class="iniciativas__negrito">Contato(s):</strong> ${iniciativas[inicio].contato_projeto}</p>
-                          </div>
-                      </div>
-        `;
+            `;
+        inseriu = false;
+    }
+
 }

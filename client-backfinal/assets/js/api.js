@@ -9,6 +9,7 @@ const listarIniciativas = () => {
 };
 
 listarIniciativas().then(dadosBrutos => { 
+    dadosTotais = dadosBrutos;
     inserirNumerosNoContent(dadosBrutos);
 
     inserirFiltrosRegioes(dadosBrutos);
