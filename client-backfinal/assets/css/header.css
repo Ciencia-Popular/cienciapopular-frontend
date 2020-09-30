@@ -29,6 +29,9 @@
     font-size: 2.2rem;
     font-weight: 600;
 }
+.cabecalho__nome-logo a{
+    color: #FFFFFF;
+}
 
 .cabecalho__nav ul{
     list-style: none;

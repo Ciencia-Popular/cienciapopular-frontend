@@ -1,5 +1,5 @@
 const listarIniciativas = () => { 
-    return fetch('http://cienciapopular-com-br.umbler.net/projetos')
+    return fetch('https://cienciapopular-com-br.umbler.net/projetos')
     .then( resposta => {
         return resposta.json();
     })
