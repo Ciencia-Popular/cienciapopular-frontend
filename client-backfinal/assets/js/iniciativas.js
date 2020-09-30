@@ -3,7 +3,11 @@ let botaoDialog = document.querySelector('.dialog__botao');
 let dadosFiltrados = [];
 
 let listaIniciativas = (iniciativas) => {
-    for(let i = 0; i < 10; i++){        
+    
+    let qtdDaLista = 10;
+    if(iniciativas.length < 10) qtdDaLista = iniciativas.length;
+    
+    for(let i = 0; i < qtdDaLista; i++){        
         iniciativasPai.innerHTML  += `
         <div class="iniciativa">
                           <div class="iniciativas__numeracao">
