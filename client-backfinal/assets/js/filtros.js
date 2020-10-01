@@ -83,7 +83,7 @@ let inserirFiltrosEstado = (dadosBrutos) => {
 //Preencher o combobox de tipo de instituiçao com as instituições mapeadas
 let comboBoxTipo = document.querySelector('#filtro-tipo');
 let inserirFiltrosTipo = (dadosBrutos) => {
-    comboBoxTipo.innerHTML = '<option value="Tipo" class="filtros__option">Tipo</option>';
+    comboBoxTipo.innerHTML = '<option value="Tipo" class="filtros__option">Tipo de instituição</option>';
     
     let tipos = [];
     for(let i = 0; i<dadosBrutos.length; i++){

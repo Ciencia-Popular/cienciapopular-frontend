@@ -1,14 +1,14 @@
 .sudeste path {
-    fill: #00AEFF;
-}
-.sul path {
-    fill: #0EAD8A;
-}
-.centroOeste path {
     fill: #3E4095;
 }
-.norte path {
+.sul path {
+    fill: #00AEFF;
+}
+.centroOeste path {    
     fill: #46C4DD;
+}
+.norte path {
+    fill: #0EAD8A;    
 }
 .nordeste path {
     fill: #1588B1;
