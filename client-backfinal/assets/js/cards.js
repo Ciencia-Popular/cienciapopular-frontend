@@ -41,17 +41,44 @@ let inserirCards = (sudeste, sul, centroOeste, norte, nordeste) => {
     let regioesCard = [];
     let regioesNome = [];
 
-    regioesCard.push(sudeste,sul,centroOeste,norte,nordeste);
-    regioesNome.push('Sudeste','Sul','C-Oeste','Norte','Nordeste');    
+    // regioesCard.push(sudeste,sul,centroOeste,norte,nordeste);
+    // regioesNome.push('Sudeste','Sul','Centro-Oeste','Norte','Nordeste');     
+    
+    cards +=`
+      <div class="conteudo-principal__cards Sudeste" id="dialogAbrir">
+              <p class="cards__regiao Sudeste">Sudeste</p>
+              <p class="cards__content Sudeste}"><strong class="cards__number Sudeste">911</strong><br>ações</p>
+      </div>
 
-    for(let i = 0; i < regioesNome.length; i++){
-      cards +=`
-        <div class="conteudo-principal__cards ${regioesNome[i]}" id="dialogAbrir">
-                <p class="cards__regiao ${regioesNome[i]}">${regioesNome[i]}</p>
-                <p class="cards__content ${regioesNome[i]}"><strong class="cards__number ${regioesNome[i]}">${regioesCard[i]}</strong><br>ações</p>
-        </div>
-      `;
-    }
+      <div class="conteudo-principal__cards Sul" id="dialogAbrir">
+              <p class="cards__regiao Sul">Sul</p>
+              <p class="cards__content Sul}"><strong class="cards__number Sul">273</strong><br>ações</p>
+      </div>
+
+      <div class="conteudo-principal__cards Centro-Oeste" id="dialogAbrir">
+              <p class="cards__regiao Centro-Oeste">Centro-Oeste</p>
+              <p class="cards__content Centro-Oeste}"><strong class="cards__number Centro-Oeste">144</strong><br>ações</p>
+      </div>
+
+      <div class="conteudo-principal__cards Norte" id="dialogAbrir">
+              <p class="cards__regiao Norte">Norte</p>
+              <p class="cards__content Norte}"><strong class="cards__number Norte">136</strong><br>ações</p>
+      </div>
+
+      <div class="conteudo-principal__cards Nordeste" id="dialogAbrir">
+              <p class="cards__regiao Nordeste">Nordeste</p>
+              <p class="cards__content Nordeste}"><strong class="cards__number Nordeste">606</strong><br>ações</p>
+      </div>
+    `;
+
+    // for(let i = 0; i < regioesNome.length; i++){
+    //   cards +=`
+    //     <div class="conteudo-principal__cards ${regioesNome[i]}" id="dialogAbrir">
+    //             <p class="cards__regiao ${regioesNome[i]}">${regioesNome[i]}</p>
+    //             <p class="cards__content ${regioesNome[i]}"><strong class="cards__number ${regioesNome[i]}">${regioesCard[i]}</strong><br>ações</p>
+    //     </div>
+    //   `;
+    // }
     
     return cards;
 }
