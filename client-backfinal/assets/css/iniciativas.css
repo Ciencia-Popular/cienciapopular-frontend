@@ -22,6 +22,7 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    margin-bottom: 2rem;
 }
 
 .iniciativa{
@@ -73,9 +74,29 @@
     font-weight: 700;
 }
 
+.dialog__rodape {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dialog__rodape__contagem{
+    width: 30%;
+    background-color: #0A6C85;
+    color: #ffffff;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 1rem;
+    line-height: 0;
+    box-sizing: border-box;
+}
+
 .dialog__botao{
     padding: 2rem;
-    width: 100%;
+    width: 58%;
     background-color: #0A6C85;
     color: #ffffff;
     font-size: 2rem;
@@ -85,7 +106,21 @@
     border: 0 none;
     outline: 0;
 }
-.dialog__botao:hover{
+
+.dialog__subir {
+    padding: 2rem;
+    width: 10%;
+    background-color: #0A6C85;
+    color: #ffffff;
+    font-size: 2rem;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.dialog__botao:hover, .dialog__subir:hover{
     background-color: #3BACC9;
 }
 
@@ -99,4 +134,24 @@
         margin-right: 0;
         margin-bottom: .5rem;
     }
+
+    .dialog__rodape {
+       flex-direction: column;
+    }
+
+    .dialog__rodape__contagem{
+        width: 100%;   
+        margin-bottom: 1rem;     
+    }
+    
+    .dialog__botao{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .dialog__subir {
+        width: 100%;
+    }
+
+
 }

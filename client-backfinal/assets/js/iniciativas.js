@@ -1,4 +1,5 @@
 let iniciativasPai = document.querySelector('#iniciativaPai');
+let divContagemIniciativas = document.querySelector('#numeracao');
 let botaoDialog = document.querySelector('.dialog__botao');
 let dadosFiltrados = [];
 
@@ -64,4 +65,11 @@ let inserirIniciativas = (iniciativas, inicio) => {
         inseriu = false;
     }
 
+}
+
+let contagemIniciativas = (dadosTotais, contagemAtual) => {
+
+    if(contagemAtual > dadosTotais.length) return;
+
+    divContagemIniciativas.innerHTML = `${contagemAtual} de ${dadosTotais.length}`;
 }

@@ -46,6 +46,22 @@ filtrarDadosTipo = (dadosBrutos, valor) => {
     return filtrando;
 }
 
+//Filtrar seguindo o combox de tipo
+let filtroCatIniciativa = document.querySelector('#filtro-catIniciativa');
+filtrarDadosCatIniciativa = (dadosBrutos, valor) => {
+    let filtrando = [];
+
+    if(valor === "CatIniciativa") return dadosBrutos;
+
+    for(let i = 0; i < dadosBrutos.length; i++){
+        if(dadosBrutos[i].categoria_projeto === valor){
+            filtrando.push(dadosBrutos[i]);
+        }
+    }
+
+    return filtrando;
+}
+
 //Preencher o combobox de estado com os estados que tem projetos
 let comboBoxRegioes = document.querySelector('#filtro-regiao');
 let inserirFiltrosRegioes = (dadosBrutos) => {
@@ -94,5 +110,22 @@ let inserirFiltrosTipo = (dadosBrutos) => {
     
     for(let i = 0; i < unique.length; i++){
         comboBoxTipo.innerHTML += `<option value="${unique[i]}" class="filtros__option">${unique[i]}</option>`;
+    }
+}
+
+//Preencher o combobox de categoria do projeto com as categorias existentes
+let comboBoxCatIniciativa = document.querySelector('#filtro-catIniciativa');
+let inserirFiltrosCatIniciativa = (dadosBrutos) => {
+    comboBoxCatIniciativa.innerHTML = '<option value="CatIniciativa" class="filtros__option">Categoria da Iniciativa</option>';
+    
+    let categorias = [];
+    for(let i = 0; i<dadosBrutos.length; i++){
+        categorias.push(dadosBrutos[i].categoria_projeto);
+    } 
+    let unique = [...new Set(categorias)];  
+    unique.sort(); 
+    
+    for(let i = 0; i < unique.length; i++){
+        comboBoxCatIniciativa.innerHTML += `<option value="${unique[i]}" class="filtros__option">${unique[i]}</option>`;
     }
 }

@@ -14,6 +14,9 @@
 .rodape__pai-logo {
     display: flex;
     width: auto;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
 }
 
 .rodape__logo-alinhar {
@@ -78,6 +81,11 @@
 @media only screen and (max-width: 1060px) {
     .rodape__content{
         flex-direction: column;
+    }
+
+    .rodape__pai-logo {
+        flex-direction: row;
+        align-items: flex-start;
     }
     .rodape__pai-info {
         align-items: flex-start;

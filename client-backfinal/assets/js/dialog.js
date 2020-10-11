@@ -34,6 +34,10 @@ document.addEventListener('keyup', function(evento) {
   }
 })
 
+// Listener para subir a página
+document.querySelector('.dialog__subir').addEventListener('click', function(){
+  dialogBody.scrollTo(0,0);
+})
 
 
 
